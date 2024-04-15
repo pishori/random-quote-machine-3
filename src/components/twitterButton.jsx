@@ -8,7 +8,7 @@ const TwitterButton = (props) => (
     style={
         marginRight: "10px",
         backgroundColor: props.style
-    }}
+    }
     >
     <FaTwitter color='white'/>
     </a>
