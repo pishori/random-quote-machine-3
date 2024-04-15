@@ -13,6 +13,7 @@ class App extends Component {
       quotes: [],
       selectedQuoteIndex: null,
       randomColour: "#234512",
+     
     }
     this.assignQuoteIndex = this.assignQuoteIndex.bind(this);
     this.generateQuoteIndex = this.generateQuoteIndex.bind(this);
