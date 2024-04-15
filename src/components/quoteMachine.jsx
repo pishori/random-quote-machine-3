@@ -13,8 +13,7 @@ const QuoteMachine = (props) => (
         <a
         id='tweet-quote'
         target="_blank"
-        href={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=${props.selectQuote ? `${props.selectQuote.quote}
-        - ${props.selectQuote.author}` : ''}`}
+        href={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=${props.selectQuote ? `"${props.selectQuote.quote}"  ${props.selectQuote.author}` : ''}`}
 
         style={{
             marginRight: "10px",
