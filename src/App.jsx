@@ -80,7 +80,8 @@ class App extends Component {
             assignQuoteIndex={this.assignQuoteIndex} />
 
             <div className='buttons'>
-              < TwitterButton style={this.randomColour} /> 
+              < TwitterButton style={this.randomColour} 
+                selectQuote={this.selectedQuote} /> 
               < Button 
                 style={this.randomColour} 
                 buttonDisplayName="Next Quote" 
