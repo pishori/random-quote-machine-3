@@ -2,7 +2,7 @@ import { Component } from 'react';
 import './App.css';
 import QuoteMachine from './components/quoteMachine';
 import Button from "./components/button";
-import TwitterButton from './components/twitterButton';
+// import TwitterButton from './components/twitterButton';
 import { FaQuoteLeft } from 'react-icons/fa'
 
 class App extends Component {
@@ -77,13 +77,17 @@ class App extends Component {
             <FaQuoteLeft size={30} style={{marginRight: "10px"}}/>
             <QuoteMachine 
             selectQuote={this.selectedQuote} 
-            assignQuoteIndex={this.assignQuoteIndex} />
+            assignQuoteIndex={this.assignQuoteIndex}
+            style={this.randomColour}
+            buttonDisplayName="Next Quote" 
+            clickHandler={() => {
+              this.assignQuoteIndex();
+              this.assignRandomColour()
+                }} />
 
-            <div className='buttons'>
+            {/* <div className='buttons'>
               < TwitterButton 
-              style={this.randomColour} 
-              selectQuote={this.selectedQuote}
-              assignQuoteIndex={this.assignQuoteIndex} />
+              style={this.randomColour} /> 
 
               < Button 
                 style={this.randomColour} 
@@ -91,8 +95,8 @@ class App extends Component {
                 clickHandler={() => {
                   this.assignQuoteIndex();
                   this.assignRandomColour()
-                }} />
-            </div> 
+                }} />            
+            </div>  */}
 
           </div> 
         </div>
