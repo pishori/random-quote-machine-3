@@ -4,7 +4,7 @@ import { FaTwitter } from 'react-icons/fa';
 const TwitterButton = (props) => (
     <a
     id='tweet-quote'
-    href='twitter.com/intent/tweet'
+    href='twitter.com/intent/post'
     style={{
         marginRight: "10px",
         backgroundColor: props.style
